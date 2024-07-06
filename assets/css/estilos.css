@@ -85,9 +85,11 @@ body {
     position: relative;
     margin-top: 7rem;
     border-radius: 50%;
-    border: 5px solid var(--color-principal);
+    border: 0.4rem solid var(--color-principal);
     overflow: hidden;
+    background-color: var(--color-principal);
 }
+
 
 /* Contenido principal */
 .layout__content {
