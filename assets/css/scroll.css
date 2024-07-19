@@ -34,8 +34,40 @@
     margin: 15px 0px;
 }
 
+/* SCROLL PARA CHROME BARRA LATERAL */
+
+.layout__aside::-webkit-scrollbar {
+    width: 25px;
+    background-color: var(--color-secondary);
+    /* determina el color del "riel" del scrollbar*/
+}
+
+.layout__aside::-webkit-scrollbar-thumb {
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+
+.layout__aside:hover::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 10px var(--color-principal);
+}
+
+.layout__aside:hover::-webkit-scrollbar-thumb:hover {
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-principal);
+}
+
+
+.layout__aside::-webkit-scrollbar-track {
+    /* este si es el riel del scrollbar...*/
+    background-color: transparent;
+    margin: 15px 0px;
+}
+
 /* SCROLL PARA MOZ */
-.content__page {
+.content__page,
+.layout__aside {
     scrollbar-width: thin;
     scrollbar-color: var(--color-scrollbar) transparent;
 }
