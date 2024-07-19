@@ -66,7 +66,7 @@
 }
 
 /* SCROLL PARA MOZ */
-.content__page {
+/* .content__page {
     scrollbar-width: thin;
     scrollbar-color: var(--color-scrollbar) transparent;
 }
@@ -74,4 +74,4 @@
 .layout__aside {
     scrollbar-width: thin;
     scrollbar-color: var(--color-scrollbar) var(--color-secondary);
-}
+} */
