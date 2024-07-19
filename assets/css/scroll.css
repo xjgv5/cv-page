@@ -1,21 +1,41 @@
-/* SCROLL PARA MOZ */
-
+:root {
+    --color-scrollbar: #d3d3d4;
+    --color-background-scrollbar: #eee;
+}
 
 
 /* SCROLL PARA CHROME */
 .content__page::-webkit-scrollbar {
     width: 25px;
-    background-color: grey;
+    background-color: transparent;
     /* determina el color del "riel" del scrollbar*/
 }
 
 .content__page::-webkit-scrollbar-thumb {
-    border: 10px solid rebeccapurple;
+    border: 10px solid transparent;
     box-shadow: none;
     border-radius: 40px;
 }
 
 
-.content__page::-webkit-scrollbar-thumb:hover {
-    box-shadow: inset 0 0 0 10px;
+.content__page:hover::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 10px var(--color-scrollbar);
+}
+
+.content__page:hover::-webkit-scrollbar-thumb:hover {
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-secondary);
+}
+
+
+.content__page::-webkit-scrollbar-track {
+    /* este si es el riel del scrollbar...*/
+    background-color: transparent;
+    margin: 15px 0px;
+}
+
+/* SCROLL PARA MOZ */
+.content__page {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar) transparent;
 }
