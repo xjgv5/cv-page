@@ -343,14 +343,16 @@ body {
 /* Estilos compartidos about */
 .about__services,
 .about__reviews,
-.about__clients {
+.about__clients,
+.about__prices {
     width: 100%;
     margin-bottom: 3rem;
 }
 
 .services__header,
 .reviews__header,
-.clients__header {
+.clients__header,
+.prices__header {
     display: inline-block;
     position: relative;
     padding-right: 1.2rem;
@@ -359,13 +361,15 @@ body {
 
 .services__title,
 .reviews__title,
-.clients__title {
+.clients__title,
+.prices__title {
     font-size: 2.1rem;
 }
 
 .services__title::after,
 .reviews__title::after,
-.clients__title::after {
+.clients__title::after,
+.prices__title::after {
     content: "";
     position: absolute;
     top: 15px;
@@ -481,7 +485,7 @@ body {
 /* Clientes */
 .about__clients {
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .clients__header {
@@ -509,4 +513,92 @@ body {
 
 .clients__link:hover {
     opacity: 1;
+}
+
+/* Precios */
+.prices__container {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.prices__box {
+    border: 2px solid var(--color-border-reviews);
+    flex-basis: 50%;
+    padding: 3rem;
+    margin-right: 3rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    transition: all 300ms ease-in-out;
+    height: 100%;
+}
+
+.prices__box:hover {
+    box-shadow: 0px 18px 24px -5px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1rem);
+}
+
+.prices__box:last-of-type {
+    margin-right: 0rem;
+}
+
+.prices__subtitle {
+    margin-bottom: 3rem;
+
+}
+
+.prices__text {
+    display: inline-block;
+    position: relative;
+}
+
+.prices__box:hover .prices__text::after {
+    content: "";
+    height: 0.2rem;
+    right: 0;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+}
+
+.prices__price {
+    padding: 1rem;
+}
+
+.prices__number {
+    display: block;
+    font-size: 4.2rem;
+    line-height: 1;
+    color: var(--color-title);
+}
+
+.prices__advice {
+    color: var(--color-subtitle);
+    display: block;
+}
+
+.prices__buy {
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.prices__btn {
+    border: 2px solid var(--color-border-reviews);
+    box-shadow: 0 10px 10px -8px var(--color-border-reviews);
+    border-radius: 3rem;
+    padding: 1.2rem 3.1rem;
+    display: inline-block;
+    transition: all 300ms ease-in-out;
+}
+
+.prices__btn:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-principal);
+    border: 2px solid var(--color-secondary);
+}
+
+.prices__reward {
+    font-size: 1.4rem;
+    padding: 0.6rem 0;
 }
