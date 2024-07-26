@@ -11,6 +11,7 @@
     --color-title: #222;
     --color-border-reviews: #e5e6e7;
     --color-company: #a5a6a7;
+    --color-background-certificate: #f5f5f5;
 }
 
 /*Estilos generales*/
@@ -843,4 +844,54 @@ body {
     border-radius: 0.4rem;
     color: var(--color-principal);
     margin: 0.3rem;
+}
+
+.certificates__container {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.certificate__certificate {
+    flex-basis: calc(50% - 1.5rem);
+    border: 2px solid var(--color-border-reviews);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.certificate__logo {
+    width: 15rem;
+    height: 100%;
+    background-color: var(--color-background-certificate);
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificates__image {
+    width: 100%;
+}
+
+.certificate__title {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.certificate__content {
+    padding: 2rem 2.5rem;
+}
+
+.certificate__id {
+    display: block;
+    font-size: 1.3rem;
+    color: var(--color-subtitle);
+    margin-bottom: 0.3rem;
+}
+
+.certificate__date {
+    font-size: 1.2rem;
+    color: var(--color-subtitle);
 }
