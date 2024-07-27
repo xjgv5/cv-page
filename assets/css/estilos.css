@@ -274,7 +274,8 @@ body {
 
 /* Estilos generales (Sobre mi) y otras paginas */
 .content__about,
-.content__resume {
+.content__resume,
+.content__portfolio {
     overflow: auto;
     height: 100%;
     min-height: 100%;
@@ -284,19 +285,22 @@ body {
 }
 
 .about__header,
-.resume__header {
+.resume__header,
+.portfolio__header {
     margin-bottom: 4.5rem;
     display: inline-block;
 }
 
 .about__title,
-.resume__title {
+.resume__title,
+.portfolio__title {
     font-size: 3.2rem;
     position: relative;
 }
 
 .about__title::after,
-.resume__title::after {
+.resume__title::after,
+.portfolio__title::after {
     content: "";
     position: absolute;
     top: 20px;
