@@ -899,3 +899,34 @@ body {
     font-size: 1.2rem;
     color: var(--color-subtitle);
 }
+
+/* Portfolio */
+.portfolio__navbar {
+    margin-bottom: 3rem;
+
+}
+
+.portfolio__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.portfolio__option {
+    font-size: 1.3rem;
+    opacity: .7;
+}
+
+.portfolio__option--active {
+    opacity: 1;
+}
+
+.portfolio__link {
+    cursor: pointer;
+}
+
+.portfolio__link:hover {
+    color: var(--color-secondary);
+    font-weight: bold;
+}
