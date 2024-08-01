@@ -131,7 +131,7 @@
 
                     </section>
 
-                    <section class="contact__form">
+                    <section class="contact__form-box">
 
                         <div class="contact__map">
 
@@ -140,6 +140,43 @@
                         <header class="contact__form-header">
                             <h3 class="contact__subtitle">¿Cómo puedo <span class="title__color">ayudarte?</span></h3>
                         </header>
+
+                        <form action="" class="contact__form">
+                            <div class="form__container">
+                                <section class="form__left">
+
+                                    <div class="form__group">
+                                        <input type="text" class="form__input" name="name" required placeholder="Nombre"
+                                            id="name">
+                                        <label for="name" class="form__label">Nombre</label>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <input type="email" class="form__input" name="email" required
+                                            placeholder="Email" id="email">
+                                        <label for="email" class="form__label">Email</label>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <input type="text" class="form__input" name="subject" required
+                                            placeholder="Asunto" id="subject">
+                                        <label for="subject" class="form__label">Asunto</label>
+                                    </div>
+
+                                </section>
+                                <section class="form__right">
+
+                                    <div class="form__group">
+                                        <textarea class="form__input form__input--textarea" name="message" required
+                                            placeholder="Mensaje" id="message"></textarea>
+                                        <label for="message" class="form__label">Mensaje</label>
+                                    </div>
+
+                                </section>
+
+                                <input type="submit" class="form__button" value="Enviar">
+                            </div>
+                        </form>
 
                     </section>
 
