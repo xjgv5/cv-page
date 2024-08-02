@@ -1154,21 +1154,22 @@ body {
     padding: 1rem 1.2rem;
     outline: none;
     box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.10);
+    background: 0 0;
     background-color: transparent;
     line-height: 2.1rem;
 }
 
-.form__input:focus {
-    border: 2px solid var(--color-secondary);
-}
 
 .form__label {
     position: absolute;
     top: 1rem;
     left: 1.5rem;
-    z-index: -1;
     color: var(--color-company);
     transition: all 300ms ease-in-out;
+}
+
+.form__input:focus {
+    border: 2px solid var(--color-secondary);
 }
 
 .form__input:focus~label {
@@ -1178,6 +1179,15 @@ body {
     font-size: 1.3rem;
     color: var(--color-secondary);
 }
+
+.form__input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form__input::-moz-placeholder {
+    color: transparent;
+}
+
 
 .form__right {
     flex-basis: 50%;
