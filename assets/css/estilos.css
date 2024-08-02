@@ -1213,3 +1213,20 @@ body {
 .contact__form-header {
     margin-bottom: 0;
 }
+
+.form__button {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border: 0.2rem solid var(--color-secondary);
+    color: var(--color-title);
+    background-color: var(--color-principal);
+    border-radius: 3rem;
+    box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, .20);
+    transition: all 300ms ease-in-out;
+}
+
+.form__button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-principal);
+    cursor: pointer;
+}
