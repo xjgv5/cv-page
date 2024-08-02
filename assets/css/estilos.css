@@ -1163,8 +1163,19 @@ body {
 
 .form__label {}
 
+.form__right {
+    flex-basis: 50%;
+    max-width: 50%;
+    max-height: 100%;
+}
+
+.form__group--textarea {
+    height: 100%;
+}
+
 .form__input--textarea {
     display: block;
+    resize: none;
     height: 100%;
 }
 
@@ -1175,5 +1186,3 @@ body {
 .contact__form-header {
     margin-bottom: 0;
 }
-
-.form__right {}
