@@ -12,6 +12,7 @@
     --color-border-reviews: #e5e6e7;
     --color-company: #a5a6a7;
     --color-background-certificate: #f5f5f5;
+    --color-background-contact: #FCFCFC;
 }
 
 /*Estilos generales*/
@@ -290,7 +291,7 @@ body {
 .resume__header,
 .portfolio__header,
 .blog__header,
-.contact__header {
+.contact__form-header {
     margin-bottom: 4.5rem;
     display: inline-block;
 }
@@ -1087,4 +1088,39 @@ body {
 
 .article__title {
     font-size: 1.8rem;
+}
+
+/* Pagina de contacto */
+.contact__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact__info {
+    flex-basis: 33%;
+    padding: 0 1.5rem;
+}
+
+.contact__data {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--color-background-contact);
+    border: 1px solid var(--color-border-reviews);
+}
+
+.contact__form-box {
+    flex-basis: 67%;
+    padding: 0 1.5rem;
+}
+
+.contact__icon {
+    font-size: 3.3rem;
+    color: var(--color-secondary);
+}
+
+.contact__subtitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
