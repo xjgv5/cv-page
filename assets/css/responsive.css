@@ -1,6 +1,17 @@
 @media (max-width: 1490px) {
+    body {
+        padding: 0;
+    }
+
     .layout {
         min-width: auto;
         width: 80%;
+    }
+}
+
+@media (max-width: 1320px) {
+    .layout {
+        width: 89%;
+        margin-left: 3rem;
     }
 }
