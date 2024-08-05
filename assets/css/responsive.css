@@ -15,3 +15,10 @@
         margin-left: 3rem;
     }
 }
+
+@media (max-width: 1160px) {
+    .layout {
+        width: 85%;
+        margin-left: 1.5rem;
+    }
+}
