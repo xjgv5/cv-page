@@ -48,6 +48,7 @@
     }
 
     .layout__menu-toggle {
+        z-index: 9999;
         display: block;
         position: absolute;
         right: 1.5rem;
@@ -64,9 +65,21 @@
         transition: all 300ms ease-in-out;
     }
 
+    .menu-toggle__icon {
+        color: var(--color-principal);
+        display: block;
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        transition: all 300ms ease-in-out;
+    }
+
+    .fa-bars {
+        opacity: 1;
+    }
+
     .fa-xmark {
-        /* Provisional */
-        display: none !important;
+        opacity: 0;
     }
 
     .layout__aside {
